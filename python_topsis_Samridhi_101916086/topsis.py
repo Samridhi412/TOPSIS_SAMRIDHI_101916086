@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import logging
 
-def inDigit(self,x):
+def inDigit(x):
   try:
     return float(x)
   except ValueError:
