@@ -74,10 +74,8 @@ def topsis(filename,weights,impacts,resultfile):
         topsis_score.append(euclid_worst/euclid_best)
       data["Topsis_score"]=topsis_score  
       topsis_score = pd.DataFrame(topsis_score)
-      topsis_score = topsis_score.rank(method='first',ascending=False)
-      topsis_score.columns = ['Rank']
-      data.insert(column+2,"Rank",topsis_score,allow_duplicates=False)
-      # print(dataset)
+      topsis_rank = topsis_score.rank(method='first',ascending=False)
+      data["Rank"]=topsis_rank
       data.to_csv(resultfile,index=False)  
     except IOError:
       logging.error("file not found!!")
