@@ -11,7 +11,7 @@ setup(
     description="Topsis score and rank generator",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Samridhi412/topsis_Samridhi_101916086",
+    url="https://github.com/Samridhi412/python_topsis_Samridhi_101916086",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
