@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name = 'python_topsis_Samridhi_101916086',
-    version="4.1.1",
+    version="4.2.1",
     author = 'Samridhi',                   
     author_email = 'sgarg7_be19@thapar.edu',
     description="Topsis score and rank generator",
